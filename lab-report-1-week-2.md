@@ -4,4 +4,4 @@
 
 [Lab Report 1](lab-report-1-week-2.html)
 
-[Lab Report 1](https://tuan2003.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+[Lab Report 1](https://tuanndang.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
