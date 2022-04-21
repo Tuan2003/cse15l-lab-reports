@@ -41,11 +41,16 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 
 ### There are many things you can do with SSH, you can even run these commands on your own local computer. Provided below are some commands that you can try at your own convienience, try to figure out what these commands do on your local computer vs. on the remote computer. 
 
-1. >cd ~
-2. >cd 
-3. >ls -lat
-4. >ls -a
-5. >cp
+1. ```cd ~```
+2. `cd `
+3. `ls -lat`
+4. `ls -a`
+5. `cp`
+
+Provided below are some more ssh commands you can use.
+
+![Image](sshcommands.png)
+
 
 *** 
 ## Moving files using SCP
@@ -54,21 +59,21 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 
 1. Let's get started by creating a file that we want to copy over to the remote machine. Try creating a java file *HelloWorld.java* that prints to the console
 
-> Hello World! 
+``` Hello World! ```
 
 ![Image](HelloWorld.png)
 
 2. Use the line provided below to remotely transfer your *HelloWorld.java* class to your remote machine. Replace xxx with the letters provided to your own account. You should be prompted to type in your password again so provide that in order to transfer the file. 
 
-> ssh HelloWorld.java cs15lsp22xxx@ieng6.ucsd.edu:~/
+```ssh HelloWorld.java cs15lsp22xxx@ieng6.ucsd.edu:~/```
 
 3. Once you are logged in and the file has transferred over try running
 
->javac HelloWorld.java
+```javac HelloWorld.java```
 
 Then, 
 
->java HelloWorld
+```java HelloWorld```
 
 4. If the following works then you have successfully transferred a file from your local machine to the remote machine. 
 
@@ -80,21 +85,10 @@ Then,
 
 1. Open up a new terminal in Visual Studio Code or using your computer terminal type in the command line below in order to see the following pop up. **Do not add a passphrase.**
 
-> ssh-keygen
+```ssh-keygen ```
 
-```
+![Image](sshkeygen.png)
 
-$ ssh-keygen
-
-Generating public/private rsa key pair.
-Enter file in which to save the key (C:\Users\<username>/.ssh/id_rsa): C:\Users\<username>/.ssh/id_rsa
-
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again: 
-
-Your identification has been saved in C:\Users\<username>/.ssh/id_rsa.
-Your public key has been saved in C:\Users\<username>/.ssh/id_rsa.pub.
-```
 > The C:\User\<username>/.ssh/id_rsa directory may be different depending on the device you are using. 
 
 2. Next step in this process is to copy our public key onto the remote machine. 
@@ -124,11 +118,11 @@ $scp C:\Users\<username>/.ssh/id_rsa.pub. cs15lsp22xxx@ieng6.ucsd.edu:~/.ssh/aut
 
 1. Now that you've fully setup and made the process of logging onto the server a lot more easier, now we can try things like:
 
-> ssh cs15lsp22xxx@ieng6.ucsd.edu "ls" 
+![Image](sshcmdline1.png)
 
 Or even,
 
->ssh cs15lsp22xxx@ieng6.ucsd.edu "javac HelloWorld.java; java HelloWorld"
+![Image](sshcmdline2.png)
 
 2. These commands will be ran when you are connected to the remote machine. You are not limited to these commands for SSH so let you imagination run wild. 
 
