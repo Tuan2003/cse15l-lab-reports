@@ -9,17 +9,7 @@
 
 ***
 
-## **Markdown Testing**
-
-**Hello World!**
-
-## Sub Header
-
-*Italicized*
-
-***
-
-[Link](ucsd.edu)
+[UCSD Website](https://ucsd.edu)
 
 ***
 
@@ -27,22 +17,6 @@
 
 ***
 
-> Testing
-
-***
-
-* Item 1
-* Item 2
-* Item 3
-
-***
-
-1. One
-2. Two
-3. Three
-4. Four!
-
-`System.out.println("Hello World!");`
 
 
 
