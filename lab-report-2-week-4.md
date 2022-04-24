@@ -11,7 +11,7 @@ Below are the contents of [testfile2.md](https://github.com/TuannDang/markdown-p
 
 
 
-![Image](testfile2contents.png)
+![Image](testfile2contents.PNG)
 
 The bug that caused this issue would be the while loop running infinitely times until the index was greater than the length of the contents of the file. To produce this bug with the original program, there had to be empty spaces after a link of markdown. 
 
@@ -25,15 +25,13 @@ With the failure inducing input, I was able to make the code changes provided ab
 
 The following is the second revision of the MarkdownParse file. 
 
-
-
-![Image](CodeChange2.png)
+![Image](CodeChange2.PNG)
 
 Below are the contents of the second revision of [testfile2.md](https://github.com/TuannDang/markdown-parser/blob/c6aab6fec79bfd3402776433d09df8d2876facb2/testfile2.md). 
 
 
 
-![Image](CodeChange2Contents.png)
+![Image](CodeChange2Contents.PNG)
 
 After running this failure inducing input on the MarkdownParse file, I realized that the loop would run an infinite amount of time after it found the closed bracket. So this, failure inducing input caused the bug which would be the line where the code is trying to find the index of the open parenthesis given the index of the closed bracket. This bug led to the symptom of an infinite loop. 
 
@@ -43,12 +41,9 @@ This bug I resolved by implementing an if statement that would check if an open 
 
 ## **Code Change 3**
 
-
-
 ![Image](CodeChange3.PNG)
 
 Below are the contents of [test-file8.md](https://github.com/TuannDang/markdown-parser/blob/main/test-file8.md)
-
 
 ![Image](testfile8contents.PNG)
 
