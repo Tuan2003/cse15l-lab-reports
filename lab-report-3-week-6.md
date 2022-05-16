@@ -68,14 +68,25 @@ The image below shows the result of running the two command lines on the ieng6 s
 
 `scp -r *.java *.md lib/ ieng6:markdown-parse; ssh ieng6`
 
+
+
 Pairing what I did previously with streamlining the SSH connection process, I ran the command line above which copies all of the java files, all of the markdown files and the library directory to the ieng6 server and into the markdown-parse directory. After this it is expected to run the command line ssh ieng6 which connects me directly to the ieng6 server right after the files are copied.
 
 Provided below is a screenshot of the process running smoothly!
 
 ![Image](multipleCmds.png)
 
+Now that I have been able to copy over my files correctly onto the ieng6 machine. Let's now try to run multiple lines that allow me to copy my markdown-parse folder and also be able to compile the test files!
 
+The command that I have ran below is:
 
+`scp -r . cs15lsp22aqb@ieng6.ucsd.edu:~/markdown-parse; ssh ieng6 "cd markdown-parse; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
+
+Remember to replace the `cs15lsp22aqb` with the 3 or 2 letters of your course specific username!
+
+Below is the result of successfully running this command line. 
+
+![Image](RunningMultipleCommandsWithSCPandSSH.png)
 
 
 
