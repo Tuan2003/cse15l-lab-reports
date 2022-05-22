@@ -4,11 +4,11 @@
 
  So for the SSH configuration file I simply used the terminal and the command line to edit my configuration. Provided below is my .ssh/config file 
 
-![Image](sshconfigfile.png)
+![Image](/Images/sshconfigfile.png)
 
 For the log in process I simply logged into the ieng6 account by typing `ssh ieng6` into the command line
 
-![Image](LoggedInUsingSSHieng6.png)
+![Image](/Images/LoggedInUsingSSHieng6.png)
 
 
 In order to copy a file to the remote server, I needed to run the following command line to have it securely copy a file from my machine (locally) to the remote machine. 
@@ -17,7 +17,7 @@ In order to copy a file to the remote server, I needed to run the following comm
 
 The command line simply copied my file into the home directory of my ieng6 account. Below is the result of myself running the command line above. 
 
-![Image](SCPFileToRemote.png)
+![Image](/Images/SCPFileToRemote.png)
 
 ___
 
@@ -26,24 +26,24 @@ ___
 Provided in the screenshot below, I've added the public key on my laptop and the public key from the ieng6 server and the SSH keys to github.
 Here are where my public keys are stored in for [Github](github.com).
 
-![Image](SSHKeyStoredGithub.png)
+![Image](/Images/SSHKeyStoredGithub.png)
 
 
 The SSH keys stored on the ieng6 account are stored in a folder called .ssh. I have went ahead and used the command line `ls` to list the files inside the directory. Using this command line I can display the files that are inside this directory *.ssh*
 
-![Image](SSHKeysOnIeng6.png)
+![Image](/Images/SSHKeysOnIeng6.png)
 
 Now that I have provided my personal laptop and the ieng6 account github access. I will try to push and create some contents using the ieng6 server. Before I went ahead and pushed the changes I made I used the command lines `touch hello.txt` to create a new text file named hello. In order to save my changes I needed to also run the line git add hello.txt. Then I used `git commit -m "message"` to commit my changes. 
 
-![Image](GitPushing.png)
+![Image](/Images/GitPushing.png)
 
 After running this I have ran the git push command which pushes the changes to the origin.
 
-![Image](SuccessfulGitPush.png)
+![Image](/Images/SuccessfulGitPush.png)
 
 Below is the screenshot of the successful push and commit to the repository. Provideded is also the link to the [successful commit](https://github.com/TuannDang/markdown-parser/commit/968b4fd9b267591dd80222df659e4bc8ee31a941).
 
-![Image](PushChanges.png)
+![Image](/Images/PushChanges.png)
 
 ___
 ## Copy whole directories with scp -r
@@ -63,7 +63,7 @@ In order to run the JUnit tests on the ieng6 machine, I have to run the followin
 
 The image below shows the result of running the two command lines on the ieng6 server.
 
-![Image](runningJUnit.png)
+![Image](/Images/runningJUnit.png)
 
 
 `scp -r *.java *.md lib/ ieng6:markdown-parse; ssh ieng6`
@@ -74,7 +74,7 @@ Pairing what I did previously with streamlining the SSH connection process, I ra
 
 Provided below is a screenshot of the process running smoothly!
 
-![Image](multipleCmds.png)
+![Image](/Images/multipleCmds.png)
 
 Now that I have been able to copy over my files correctly onto the ieng6 machine. Let's now try to run multiple lines that allow me to copy my markdown-parse folder and also be able to compile the test files!
 
@@ -86,7 +86,7 @@ Remember to replace the `cs15lsp22aqb` with the 3 or 2 letters of your course sp
 
 Below is the result of successfully running this command line. 
 
-![Image](RunningMultipleCommandsWithSCPandSSH.png)
+![Image](/Images/RunningMultipleCommandsWithSCPandSSH.png)
 
 
 

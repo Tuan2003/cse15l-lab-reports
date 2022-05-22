@@ -7,13 +7,13 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 ## Installing Visual Studio Code: 
 1. Click on this link to access the website to download [Visual Studio Code](https://code.visualstudio.com)
 
-2. You should be able to see this screen when you click on the hyperlink. ![Image](vscodedownloadpage.png)
+2. You should be able to see this screen when you click on the hyperlink. ![Image]/Images/(vscodedownloadpage.png)
 
 3. The big blue button may show up as something different depending on the device you are using. Don't be discouraged if you see something different. 
 
 4. Click on the blue button that shows "Download Mac Universal." This may show up as "Download Windows User Installer" or even "Download Linux .deb" 
 
-5. Go through the installation process and you should see this once it is fully installed and loaded up. ![Image](vscodeloaded.png)
+5. Go through the installation process and you should see this once it is fully installed and loaded up. ![Image](/Images/vscodeloaded.png)
 
 ***
 
@@ -23,7 +23,7 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 2. Navigate over to this [link](https://sdacs.ucsd.edu/~icc/index.php) to find your UCSD course-specific account for CSE 15L type in your username and password used to access your student account and you should be able to see your course provided account beginning with 
 > cs15lsp22 
 
-3. Open Visual Studio Code and go to the top of the navigation. ![Image](navigation_tab.png)
+3. Open Visual Studio Code and go to the top of the navigation. ![Image](/Images/navigation_tab.png)
 
 4. Click on Terminal -> New Terminal to create a new terminal. You can also use press Control + Shift + ` to create a new terminal using your keyboard.
 
@@ -33,7 +33,7 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 
 6. Once you enter in this line you should be prompted with a password and this password is the password that you use to login to your student account. Don't worry, the password is hidden for security purposes. 
 
-7. When you successfully log in you should see the following show up in your terminal. ![Image](loggedintocs15l.png)
+7. When you successfully log in you should see the following show up in your terminal. ![Image](/Images/loggedintocs15l.png)
 
 ***
 
@@ -49,7 +49,7 @@ Welcome 15L students! You will be learning how to log in remotely to your course
 
 Provided below are some more ssh commands you can use.
 
-![Image](sshcommands.png)
+![Image](/Images/sshcommands.png)
 
 
 *** 
@@ -61,7 +61,7 @@ Provided below are some more ssh commands you can use.
 
 ``` Hello World! ```
 
-![Image](HelloWorld.png)
+![Image](/Images/HelloWorld.png)
 
 2. Use the line provided below to remotely transfer your *HelloWorld.java* class to your remote machine. Replace xxx with the letters provided to your own account. You should be prompted to type in your password again so provide that in order to transfer the file. 
 
@@ -87,7 +87,7 @@ Then,
 
 ```ssh-keygen ```
 
-![Image](sshkeygen.png)
+![Image](/Images/sshkeygen.png)
 
 > The C:\User\<username>/.ssh/id_rsa directory may be different depending on the device you are using. 
 
@@ -118,11 +118,11 @@ $scp C:\Users\<username>/.ssh/id_rsa.pub. cs15lsp22xxx@ieng6.ucsd.edu:~/.ssh/aut
 
 1. Now that you've fully setup and made the process of logging onto the server a lot more easier, now we can try things like:
 
-![Image](sshcmdline1.png)
+![Image](/Images/sshcmdline1.png)
 
 Or even,
 
-![Image](sshcmdline2.png)
+![Image](/Images/sshcmdline2.png)
 
 2. These commands will be ran when you are connected to the remote machine. You are not limited to these commands for SSH so let you imagination run wild. 
 

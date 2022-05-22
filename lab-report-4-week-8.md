@@ -4,17 +4,17 @@
 
 This is the first code snippet that we are provided:
 
-![Image](snippet1.PNG)
+![Image](/Images/snippet1.PNG)
 
 I created my test cases based on what was displayed when I copied and pasted the markdown snippets we were provided onto the [Common Mark demo site](https://spec.commonmark.org/dingus/).
 
 The image below shows how the markdown snippet was formatted on the [demo site](https://spec.commonmark.org/dingus/).
 
-![Image](snippet1CM.png)
+![Image](/Images/snippet1CM.png)
 
 With what was displayed on the [Common Mark demo site](https://spec.commonmark.org/dingus/) the image below showed how I interpreted what should be returned as a result of the preview on the demo site.
 
-![Image](snippet1JUnitTest.PNG)
+![Image](/Images/snippet1JUnitTest.PNG)
 
 So the first line on the snippet should not return a link. The second line of the snippet will add a link of 
 `` `google.com `` 
@@ -24,12 +24,12 @@ The next two lines that proceed this will be expected to add
 
 After running the JUnitTest on my implementation, my implementation failed. The image below shows the JUnitAssertion that was produced as a result of my implementation failing. 
 
-![Image](snippet1JUnitTestFail.png)
+![Image](/Images/snippet1JUnitTestFail.png)
 
 
 I also ran the same implementation that I created based on the preview on the implementation that I reviewed during the lab on week 7. 
 
-![Image](snippet1JUnitTestFailWeek7Review.png)
+![Image](/Images/snippet1JUnitTestFailWeek7Review.png)
 
 Unfortunately, both implementations failed this test case. However, the implementation that I reviewed during the week 7 lab was much closer to the result that I was expecting. 
 
@@ -39,15 +39,15 @@ ___
 
 This is the second markdown snippet:
 
-![Image](snippet2.PNG)
+![Image](/Images/snippet2.PNG)
 
 The image below shows how the markdown snippet was formatted on the [demo site](https://spec.commonmark.org/dingus/).
 
-![Image](snippet2CM.png)
+![Image](/Images/snippet2CM.png)
 
 With what was displayed on the [Common Mark demo site](https://spec.commonmark.org/dingus/) the image below showed how I interpreted what should be returned as a result of the preview on the demo site.
 
-![Image](snippet2JUnitTest.png)
+![Image](/Images/snippet2JUnitTest.png)
 
 From the first line of the markdown snippet, we are expecting ``a.com`` to be added as a link to the String ArrayList. 
 
@@ -57,11 +57,11 @@ The line following is also expected to append ``example.com`` to the String Arra
 
 With the expected results created in my method of the JUnitTest, after running the JUnitTest on my implementation, my implementation failed. The image below shows the JUnitAssertion that was produced as a result of my implementation failing. 
 
-![Image](snippet2JUnitTestFail.png)
+![Image](/Images/snippet2JUnitTestFail.png)
 
 Testing the same JUnitTest on the implementation reviewed from week 7, below is the result running the JUnitTest:
 
-![Image](snippet2JUnitTestFailWeek7Implementation.png)
+![Image](/Images/snippet2JUnitTestFailWeek7Implementation.png)
 
 Both impementations failed once again using the expected test case, but the implementation from week 7 was much closer to the result we are expecting. 
 
@@ -71,26 +71,26 @@ ___
 
 This is the third markdown snippet:
 
-![Image](snippet3.PNG)
+![Image](/Images/snippet3.PNG)
 
 The image below shows how the markdown snippet was formatted on the [demo site](https://spec.commonmark.org/dingus/).
 
-![Image](snippet3CM.png)
+![Image](/Images/snippet3CM.png)
 
 
 With what was displayed on the [Common Mark demo site](https://spec.commonmark.org/dingus/) the image below showed how I interpreted what should be returned as a result of the preview on the demo site.
 
-![Image](snippet3JUnitTest.png)
+![Image](/Images/snippet3JUnitTest.png)
 
 From what the preview displayed on [Common Mark demo site](https://spec.commonmark.org/dingus/), I am expecting only ``https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule`` to be added to the String ArrayList. 
 
 From testing the expected results for snippet 3, the image snippet below shows the results of testing on my implementation:
 
-![Image](snippet3JUnitTestFail.png)
+![Image](/Images/snippet3JUnitTestFail.png)
 
 Testing the same JUnitTest on the implementation reviewed from week 7, below is the result running the JUnitTest:
 
-![Image](snippet3JUnitTestFailWeek7Review.png)
+![Image](/Images/snippet3JUnitTestFailWeek7Review.png)
 
 As we can see from the results provided above, both implementations failed to produce the expected results. 
 
