@@ -10,7 +10,6 @@
 [Lab Report 3 (Week 6)](lab-report-3-week-6.md)
 
 [Lab Report 4 (Week 8)](lab-report-4-week-8.md)
-***
 
 [UCSD Website](https://ucsd.edu)
 
