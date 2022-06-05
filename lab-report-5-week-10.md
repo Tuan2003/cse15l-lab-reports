@@ -18,7 +18,7 @@ I have went ahead and decided to choose markdown file [567](https://github.com/T
 
 Below is a screenshot of the contents of [567.md](https://github.com/TuannDang/markdown-parser/blob/main/test-files/567.md). I have also decide to use the [Visual Studio Code](https://code.visualstudio.com/) preview as my way of determining which one is a link and which ones are not. 
 
-![Image](/Images/567md%20contents.png)
+![Image](/Images/567mdcontents.png)
 
 As expected, we are not expecting any links to be returned. 
 
@@ -45,7 +45,7 @@ As for the next test file I will be comparing against my implementation and the 
 
 Also provided below is a screenshot of the contents of [578.md](https://github.com/TuannDang/markdown-parser/blob/main/test-files/578.md). 
 
-![Image](/Images/578md%20contents.png)
+![Image](/Images/578mdcontents.png)
 
 - As provided by the Visual Studio Code preview above, we are not expecting any links to be returned because the preview only has an image. 
 
