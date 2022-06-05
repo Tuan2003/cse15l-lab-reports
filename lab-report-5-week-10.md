@@ -3,7 +3,7 @@
 After using `bash script.sh > results.txt` on my implementation and the implementation from Lab 9, I ran the following line to compare the differences of the two implementations.
 
 `vimdiff file1.txt file2.txt`
-___ 
+
 This used the built in [powerful VIM editor](https://www.vim.org/) that easily showed how each file differs in a side by side comparison.
 
 The image below is a small little snippet of the two files that I compared. 
