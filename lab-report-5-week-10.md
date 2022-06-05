@@ -1,6 +1,6 @@
 # **Lab Report 5 - Week 10**
 
-So I to find the tests that produced the different results, I simply just ran.
+After using `bash script.sh > results.txt` on my implementation and the implementation from Lab 9, I ran the following line to compare the differences of the two implementations.
 
 `vimdiff file1.txt file2.txt`
 ___ 
